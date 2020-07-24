@@ -12,14 +12,17 @@ window.onscroll = () => {
 };
 }());
 (() => {
+    const body = document.getElementById('body');
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header__nav');
     const closeItem = document.querySelector('.header__nav-close');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav-active');
+        body.classList.add('body-fixed');
     });
     closeItem.addEventListener('click', () => {
         menu.classList.remove('header__nav-active');
+        body.classList.remove('body-fixed');
     })
 })();
 
