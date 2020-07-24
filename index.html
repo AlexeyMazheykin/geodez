@@ -23,16 +23,16 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Главная</a>
+                            <a href="#intro" class="header__link js-scroll">Главная</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Услуги</a>
+                            <a href="#types" class="header__link js-scroll">Услуги</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Видео</a>
+                            <a href="#video" class="header__link js-scroll">Видео</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Контакты</a>
+                            <a href="#contacts" class="header__link js-scroll">Контакты</a>
                         </li>
                     </ul>
                     <div class="header__nav-close">
@@ -50,7 +50,7 @@
     </header>
 
     <main class="main">
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="wrapper">
                 <h1 class="intro__title">
                     Геодезические изыскания в Московской области.
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="types">
+        <section class="types" id="types">
             <div class="wrapper__full">
                 <div class="types__caption">
                     <h2 class="types__caption-title">
@@ -151,14 +151,14 @@
                 </div>
             </div>
         </section>
-        <div class="video">
+        <div class="video" id="video">
             <div class="video__wrapper">
                 <div class="video__elem"></div>
                 <iframe class="video__item" width="560" height="315" src="https://www.youtube.com/embed/30eYEglcZMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
-  <footer class="footer">
+  <footer class="footer" id="contacts">
         <div class="wrapper">
             <h2 class="footer__title">
                 Контакты
@@ -188,9 +188,9 @@
                     <h3 class="footer__item-title">
                         телефон:
                     </h3>
-                    <p class="footer__item-desc">
-                        8 - 915 - 033 - 21 - 53
-                    </p>
+                    <a href="tel:+79150332153" class="footer__item-desc footer__item-active">
+                        +7 - 915 - 033 - 21 - 53
+                    </a>
                 </div>
                 <div class="footer__item">
                     <div class="footer__icon">
@@ -213,9 +213,9 @@
                     <h3 class="footer__item-title">
                         e - mail
                     </h3>
-                    <p class="footer__item-desc">
+                    <a href="mailto:mazheykin@icloud.com" class="footer__item-desc footer__item-active">
                         mazheykin@icloud.com
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>

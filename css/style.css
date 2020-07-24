@@ -103,12 +103,21 @@ html {
    left: 0;
    width: 100%;
    padding-bottom: 20px;
-   transition: 0.2s;
+   padding-top: 20px;
+   transition: 0.5s;
    z-index: 999;
-  
   }
   .header_active {
       background-color: #073817;
+      padding-bottom: 10px;
+      padding-top: 10px;
+  }
+  .header__logo-pic {
+    max-width: 100%;
+    transition: 0.5s all;
+  }
+  .header__logo-pic-sm {
+      max-width: 50%;
   }
 
   .header__wrapper{
@@ -116,7 +125,7 @@ html {
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: space-between;
-      padding-top: 20px;
+      
   }
   .header__list{
       display: flex;
@@ -136,7 +145,6 @@ html {
   }
   .header__link:hover, .header__link:focus, .header__link:active{
       opacity: .75;
-      color: rgb(25, 32, 41);
   }
   .header__burger{
     align-self: center;
@@ -169,13 +177,14 @@ html {
    /* Intro styles start */
 
 .intro{
-    
+    min-height: 100vh;
     background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
     position: relative;
     z-index: 1;
+   
 }
  .intro::after{
     display: block;
@@ -418,7 +427,8 @@ html {
     background-color: rgb(17, 14, 14);
 }
 .footer__title {
-    padding: 30px 0 30px 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     color: #fff;
     font-weight: 500;
@@ -465,7 +475,9 @@ html {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 5px;
-
+}
+.footer__item-active {
+    text-decoration: none;
 }
 
 /*Footer styles end*/
@@ -479,9 +491,7 @@ html {
     .header__burger {
         display: block ;
     }
-    .header__logo-pic {
-        position: relative;
-    }
+
     .header__nav {
         position: fixed;
         width: 100%;
@@ -491,8 +501,11 @@ html {
         background-color: black;
         z-index: 10;
         padding: 75px;
-        transform: translateY(100%);
+        transform: translateX(100%);
         transition: .2s all linear;
+    }
+    .header__nav-active{
+        transform: translateX(0);
     }
     .header__item {
         width: 100%;
@@ -592,6 +605,10 @@ html {
     .types {
         margin-bottom: 35px;
     }
+    .footer__title {
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
     .footer__items {
        justify-content: space-around;
     }
@@ -616,10 +633,8 @@ html {
         text-transform: uppercase;
         margin-bottom: 15px;
     }
-    
-
     .footer__item:nth-child(2) {
-        order: 10;
+        order: 1;
     } 
 }
 /* media styles end*/
