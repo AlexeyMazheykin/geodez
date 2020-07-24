@@ -69,11 +69,6 @@ html {
     font-weight: 400;
     color: #102746;
   }
-  .body-fixed {
-position: fixed;
-  }
-  
-
   
   img{
       max-width: 100%;
@@ -494,6 +489,9 @@ position: fixed;
     .header__burger {
         display: block ;
     }
+    .body-fixed {
+        position: fixed;
+       }
 
     .header__nav {
         position: fixed;
