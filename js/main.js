@@ -60,14 +60,17 @@ window.onscroll = () => {
     const scrollTo = function () {
         const links = document.querySelectorAll('.js-scroll');
         const menu = document.querySelector('.header__nav');
+        const body = document.getElementById('body');
         links.forEach(el => {
             el.addEventListener('click', function () {
                 const currentTarget = el.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
                 menu.classList.remove('header__nav-active');
+                body.classList.remove('body-fixed');
             });
         });
     };
     scrollTo();
     
 }());
+const body = document.getElementById('body');
