@@ -1,3 +1,4 @@
+
 (function () {
 const header = document.querySelector('.header');
 const logo = document.querySelector('.header__logo-pic');
@@ -32,7 +33,7 @@ window.onscroll = () => {
 
 (function () {
 
-    const smoothScroll = function (targetEl, duration) {
+    function smoothScroll (targetEl, duration) {
         const headerElHeight =  document.querySelector('.header').clientHeight;
         let target = document.querySelector(targetEl);
         let targetPosition = target.getBoundingClientRect().top - headerElHeight;
