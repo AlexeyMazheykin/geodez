@@ -70,6 +70,6 @@
         });
       });
     };
-  
     scrollTo();
   })();
+  let a = document.querySelector('meta').content.length;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--Тег section используется везде гдк есть заголовки, а где не то используем ДИВЫ-->
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
     <!--favicon start-->
@@ -10,15 +10,23 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <meta name="description" content="Все виды геодезических и кадастровых работ в городах: Балашиха, Железнодорожный, пос.Заря, Купавна. Виды работ: геодезия, межевание, топографическая съемка">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <!--Open graph start-->
+    <meta property="og:url" content="xn--c1accbk3b.xn--p1acf">
+    <meta property="og:title" content="Геодезические работы в Москве и Московской области">
+    <meta property="og:image" content="xn--c1accbk3b.xn--p1acf/img/stroyka-min.jpg">
+    <meta property="og:description" content="xn--c1accbk3b.xn--p1acf/img/stroyka-min.jpg">
+    <!--Open graph end-->
     <!--favicon end-->
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Геодезические изыскания в Московской области</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/cssMinifier.css">
+    <link rel="stylesheet" href="Все виды геодезических и кадастровых работ в городах: Балашиха, Железнодорожный, пос.Заря, Купавна. Виды работ: геодезия, межевание, топографическая съемка">
 </head>
 
 <body id="body">
@@ -60,10 +68,10 @@
     </header>
 
     <main class="main">
-        <section class="intro" id="intro">
+        <div class="intro" id="intro">
             <div class="wrapper">
                 <h1 class="intro__title">
-                    Геодезические изыскания в Московской области.
+                    Геодезические и кадастровые работы в Москве и области.
                 </h1>
                 <p class="intro__subtitle">
                     Оказание геодезических услуг необходимо на всех этапах строительства, от разбивки осей будущих
@@ -74,7 +82,7 @@
                 </p>
                 <a href="#!" class="about__link">подробнее</a>
             </div>
-        </section>
+        </div>
         <section class="adv">
             <div class="adv__wrap">
                 <h2 class="adv__title">
@@ -83,7 +91,7 @@
                 <div class="adv__cards">
                     <div class="adv__card">
                         <div class="adv__card-pic">
-                            <img src="./img/svg/teod-icon.svg" alt="Теодолит" class="adv__card-thumb">
+                            <img src="./img/svg/teod-icon.svg" alt="teod" class="adv__card-thumb">
                         </div>
                         <h3 class="adv__card-title">
                             Все виды инженерных изысканий
@@ -97,7 +105,7 @@
                     </div>
                     <div class="adv__card">
                         <div class="adv__card-pic">
-                            <img src="./img/svg/expert.svg" alt="Теодолит" class="adv__card-thumb">
+                            <img src="./img/svg/expert.svg" alt="expert" class="adv__card-thumb">
                         </div>
                         <h3 class="adv__card-title">
                             Опытные специалисты, профессиональный консалтинг.
@@ -112,7 +120,7 @@
                     </div>
                     <div class="adv__card">
                         <div class="adv__card-pic">
-                            <img src="./img/svg/hourglass.svg" alt="Теодолит" class="adv__card-thumb">
+                            <img src="./img/svg/hourglass.svg" alt="hourglass" class="adv__card-thumb">
                         </div>
                         <h3 class="adv__card-title">
                             Кратчайшие сроки.
@@ -137,23 +145,23 @@
                 </div>
                 <div class="types__cards">
                     <figure class="types__card types__card-lg">
-                        <img class="types__card-img types__card-img-lg" src="./img/stroyka-min.jpg" alt="Kadastr">
+                        <img class="types__card-img types__card-img-lg" src="./img/stroyka-min.jpg" alt="stroyka">
                         <figcaption class="types__card-title">Сопровождение строительства</figcaption>
                     </figure>
                     <figure class="types__card types__card-lg">
-                        <img class="types__card-img types__card-img-lg" src="./img/Aero-min.jpg" alt="topo">
+                        <img class="types__card-img types__card-img-lg" src="./img/Aero-min.jpg" alt="aero">
                         <figcaption class="types__card-title">Аэрофотосъемка</figcaption>
                     </figure>
                     <figure class="types__card types__card-small">
-                        <img class="types__card-img types__card-img-small" src="./img/topo-min.jpg" alt="Kadastr">
+                        <img class="types__card-img types__card-img-small" src="./img/topo-min.jpg" alt="topo">
                         <figcaption class="types__card-title">Топография</figcaption>
                     </figure>
                     <figure class="types__card types__card-small">
-                        <img class="types__card-img types__card-img-small" src="./img/Vynos-min.jpg" alt="Kadastr">
+                        <img class="types__card-img types__card-img-small" src="./img/Vynos-min.jpg" alt="vynos">
                         <figcaption class="types__card-title">Вынос границ</figcaption>
                     </figure>
                     <figure class="types__card types__card-small">
-                        <img class="types__card-img types__card-img-small" src="./img/Kadastr-min.jpg" alt="Kadastr">
+                        <img class="types__card-img types__card-img-small" src="./img/Kadastr-min.jpg" alt="kadastr">
                         <figcaption class="types__card-title">Кадастр</figcaption>
                     </figure>
 
@@ -177,7 +185,7 @@
             <div class="footer__items">
                 <div class="footer__item">
                     <div class="footer__icon">
-                        <img src="./img/svg/place.svg" alt="" class="footer__thumb">
+                        <img src="./img/svg/place.svg" alt="place" class="footer__thumb">
                     </div>
                     <h3 class="footer__item-title">
                         адрес:
@@ -194,7 +202,7 @@
                 </div>
                 <div class="footer__item">
                     <div class="footer__icon">
-                        <img src="./img/svg/tel.svg" alt="" class="footer__thumb">
+                        <img src="./img/svg/tel.svg" alt="tel" class="footer__thumb">
                     </div>
                     <h3 class="footer__item-title">
                         телефон:
@@ -219,7 +227,7 @@
                 </div>
                 <div class="footer__item">
                     <div class="footer__icon">
-                        <img src="./img/svg/mail.svg" alt="" class="footer__thumb">
+                        <img src="./img/svg/mail.svg" alt="mail" class="footer__thumb">
                     </div>
                     <h3 class="footer__item-title">
                         e - mail
